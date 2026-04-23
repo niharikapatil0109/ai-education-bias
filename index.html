@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compounding Disadvantage – ACM FAccT 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div class="container">
+
+    <!-- VENUE -->
+    <p class="venue">ACM FAccT 2026</p>
+
+    <!-- TITLE -->
+    <h1>Compounding Disadvantage: Auditing Intersectional Bias in LLM-Generated Explanations Across Indian and American STEM Education</h1>
+
+    <!-- AUTHORS -->
+    <p class="authors">
+      <a href="#">Amogh Gupta</a>,
+      <a href="#">Niharika Patil</a>,
+      <a href="#">Sourojit Ghosh</a>,
+      <a href="#">Snehalkumar Gaikwad</a>
+    </p>
+
+    <p class="date">Published: April 20, 2026</p>
+
+    <!-- RESOURCE BUTTONS -->
+    <div class="resources">
+      <a href="img/paper.pdf" class="btn">Paper</a>
+      <a href="https://github.com/YOUR_USERNAME/ai-in-edu" class="btn">GitHub</a>
+      <a href="https://arxiv.org/abs/YOUR_ID" class="btn">arXiv</a>
+    </div>
+
+    <!-- TEASER IMAGE — replace img/teaser.png with your figure -->
+    <div class="teaser-wrap">
+      <img src="img/teaser.png" alt="Overview figure" class="teaser" />
+      <p class="caption">Figure 1. Overview of the intersectional audit framework across Indian and American STEM education contexts.</p>
+    </div>
+
+    <!-- ABSTRACT -->
+    <section>
+      <h2>Abstract</h2>
+      <p>
+        Large Language Models (LLMs) are rapidly being adopted by STEM-focused educational institutions and students worldwide. They generate personalized instructions, explanations, and provide feedback on demand. However, these systems tailor instruction to demographic signals rather than demonstrated ability. In such cases, personalization becomes a mechanism of inequality. We conduct one of the first large-scale intersectional audits of LLM-generated STEM educational content, constructing synthetic student profiles. We combine dimensions specific to Indian education (caste, medium of instruction, college tier) and American education (race, HBCU attendance, school type), alongside shared dimensions of income, gender, and disability. We audit four LLMs (Qwen 2.5-32B-Instruct, GPT-4o, GPT-4o-mini, GPT-OSS 20B) across ranking and generation tasks on two STEM datasets, evaluating outputs with FDR-corrected significance testing and SHAP feature attribution. Across both cultural contexts, marginalized profiles receive lower-quality outputs. Income is the most pervasive bias, producing significant effects across every model and context. Disability triggers simpler explanations. Intersectional analysis reveals non-additive compounding: the gap between the most privileged and most marginalized profiles reaches 2.55 grade levels. These biases persist even when marginalized students attend elite institutions. All four models converge on similar patterns. These findings carry direct design and policy implications for incorporating AI into global STEM education.
+      </p>
+    </section>
+
+    <!-- KEYWORDS -->
+    <section>
+      <h2>Keywords</h2>
+      <div class="keywords">
+        <span class="kw">AI in Education</span>
+        <span class="kw">Algorithmic Fairness</span>
+        <span class="kw">Bias Auditing Methodology</span>
+        <span class="kw">LLM Evaluation</span>
+      </div>
+    </section>
+
+    <!-- BIBTEX -->
+    <section>
+      <h2>BibTeX</h2>
+      <pre><code>@inproceedings{gupta2026compounding,
+  title     = {Compounding Disadvantage: Auditing Intersectional Bias
+               in LLM-Generated Explanations Across Indian and
+               American STEM Education},
+  author    = {Gupta, Amogh and Patil, Niharika and
+               Ghosh, Sourojit and Gaikwad, Snehalkumar},
+  booktitle = {Proceedings of the 2026 ACM Conference on Fairness,
+               Accountability, and Transparency (FAccT)},
+  year      = {2026},
+  publisher = {ACM},
+  note      = {CC BY 4.0}
+}</code></pre>
+    </section>
+
+    <!-- AUTHORS -->
+    <section>
+      <h2>Authors</h2>
+      <div class="people">
+        <a href="#">Amogh Gupta</a>
+        <a href="#">Niharika Patil</a>
+        <a href="#">Sourojit Ghosh</a>
+        <a href="#">Snehalkumar Gaikwad</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>ACM FAccT 2026 &nbsp;&middot;&nbsp; <a href="img/paper.pdf">Download PDF</a> &nbsp;&middot;&nbsp; <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
