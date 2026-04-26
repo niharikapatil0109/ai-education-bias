@@ -71,3 +71,23 @@ pre {
   height: 50px;
   object-fit: contain;
 }
+
+.bibtex-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bibtex-actions button {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.bibtex-actions button:hover {
+  background: #eee;
+}
