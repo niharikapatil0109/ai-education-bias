@@ -30,22 +30,46 @@ Education</h1>
       <a href="https://github.com/YOUR/REPO" class="btn">GitHub</a>
     </div>
 
-    <!-- REFERENCE -->
-    <h2>Reference</h2>
-    <p>Gupta et al. 2025. Compounding Disadvantage: Auditing Intersectional Bias in LLM-Generated Explanations Across Indian and American STEM Education. In <em>the Ninth Annual ACM Conference on Fairness, Accountability, and Transparency</em></p>
-    <div class="tabs">
-      <button onclick="show('bibtex')">BibTeX</button>
-      <button onclick="show('plain')">Plain Text</button>
-    </div>
-    <pre id="bibtex">
-@inproceedings{gupta2026compounding,
+<!-- REFERENCE -->
+<h2>Reference</h2>
+
+<pre id="bibtex">@inproceedings{gupta2026compounding,
   title={Compounding Disadvantage: Auditing Intersectional Bias in {LLM}-Generated Explanations Across Indian and American {STEM} Education},
   author={Amogh Gupta, Niharika Patil, Sourojit Ghosh, Snehalkumar 'Neil' S. Gaikwad},
   booktitle={The Ninth Annual ACM Conference on Fairness, Accountability, and Transparency},
   year={2026},
   url={https://openreview.net/forum?id=NWxzDjl9UK}
-}
-</pre>
+}</pre>
+
+<div class="bibtex-actions">
+  <button onclick="copyBibtex()">📋 Copy BibTeX</button>
+  <button onclick="downloadBibtex()">⬇️ Download .bib</button>
+</div>
+
+<script>
+  function show(id) {
+    document.getElementById('bibtex').style.display = id === 'bibtex' ? 'block' : 'none';
+    document.getElementById('plain').style.display  = id === 'plain'  ? 'block' : 'none';
+  }
+
+  function copyBibtex() {
+    const text = document.getElementById('bibtex').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.querySelector('.bibtex-actions button');
+      btn.textContent = '✅ Copied!';
+      setTimeout(() => btn.textContent = '📋 Copy BibTeX', 2000);
+    });
+  }
+
+  function downloadBibtex() {
+    const text = document.getElementById('bibtex').innerText;
+    const blob = new Blob([text], { type: 'text/plain' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'compounding-disadvantage.bib';
+    a.click();
+  }
+</script>
 
     <!-- PEOPLE -->
     <h2>People</h2>
